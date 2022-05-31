@@ -16,7 +16,7 @@ export class CreateAccountComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  loginForm = this.fb.group({
+  createAccountForm = this.fb.group({
     email: ['',[Validators.required, Validators.email]],
     password:['', [Validators.required, Validators.minLength(6)]]
   });
