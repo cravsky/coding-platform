@@ -6,7 +6,7 @@
           <mat-label>Enter your email</mat-label>
           <input  matInput formControlName="email">
           <mat-error *ngIf="createAccountForm.controls['email'].invalid">
-            {{createAccountForm.controls['email'].hasError('required')?'Email is required' : 'Please enter a valid email'}}
+            {{ createAccountForm.controls['email'].hasError('required') ? 'Email is required' : 'Please enter a valid email' }}
           </mat-error>
         </mat-form-field>
    
@@ -14,7 +14,7 @@
           <mat-label>Enter your password</mat-label>
           <input type="password" matInput formControlName="password" >
           <mat-error *ngIf="createAccountForm.controls['password'].invalid">
-            {{createAccountForm.controls['password'].hasError('required')?'Password is required' : 'Password should be atleast 6 characters long'}}
+            {{ createAccountForm.controls['password'].hasError('required') ? 'Password is required' : 'Password should be atleast 6 characters long' }}
           </mat-error>
         </mat-form-field>
       </form>
